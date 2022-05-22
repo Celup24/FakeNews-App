@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">FakeNews Detector</string>
-    <string name="title_home">Home</string>
+    <string name="app_name">FakeNews-Detector</string>
+    <string name="title_home">Menu Utama</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="iv_fake_news_logo">FakeNews-Detector Logo</string>
+    <string name="title_category">Kategori</string>
+    <string name="tv_category_fragment">This is category fragment</string>
+    <string name="title_fake_news">FAKE NEWS</string>
 </resources>

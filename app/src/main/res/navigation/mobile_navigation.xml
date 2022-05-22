@@ -8,18 +8,12 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.bangkit.fakenewsdetector.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="FAKE NEWS"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.bangkit.fakenewsdetector.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.bangkit.fakenewsdetector.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_category"
+        android:name="com.bangkit.fakenewsdetector.ui.category.CategoryFragment"
+        android:label="Kategori Berita"
+        tools:layout="@layout/fragment_category" />
 </navigation>
