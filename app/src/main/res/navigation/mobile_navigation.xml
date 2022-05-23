@@ -16,4 +16,11 @@
         android:name="com.bangkit.fakenewsdetector.ui.category.CategoryFragment"
         android:label="Kategori Berita"
         tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.bangkit.fakenewsdetector.ui.favorite.FavoriteFragment"
+        android:label="Favorit"
+        tools:layout="@layout/fragment_favorite" />
+
 </navigation>

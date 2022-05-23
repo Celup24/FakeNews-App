@@ -10,10 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.bangkit.fakenewsdetector.databinding.FragmentCategoryBinding
 
 class CategoryFragment : Fragment() {
-    private var _binding: FragmentCategoryBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentCategoryBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -21,21 +19,21 @@ class CategoryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
+        val categoryViewModel =
             ViewModelProvider(this).get(CategoryViewModel::class.java)
 
         _binding = FragmentCategoryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textCategory
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        categoryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
-        // Inflate the layout for this fragment
     }
 
     override fun onDestroy() {
         super.onDestroy()
+        _binding = null
     }
 }

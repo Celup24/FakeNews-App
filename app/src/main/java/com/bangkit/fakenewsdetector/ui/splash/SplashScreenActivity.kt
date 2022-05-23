@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import com.bangkit.fakenewsdetector.MainActivity
-import com.bangkit.fakenewsdetector.R
 import com.bangkit.fakenewsdetector.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
