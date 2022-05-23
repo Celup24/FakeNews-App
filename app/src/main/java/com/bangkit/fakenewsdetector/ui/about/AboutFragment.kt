@@ -1,4 +1,4 @@
-package com.bangkit.fakenewsdetector.ui.category
+package com.bangkit.fakenewsdetector.ui.about
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,11 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.bangkit.fakenewsdetector.databinding.FragmentCategoryBinding
+import com.bangkit.fakenewsdetector.databinding.FragmentAboutBinding
 
-class CategoryFragment : Fragment() {
 
-    private var _binding: FragmentCategoryBinding? = null
+class AboutFragment : Fragment() {
+
+    private var _binding: FragmentAboutBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -19,14 +20,14 @@ class CategoryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val categoryViewModel =
-            ViewModelProvider(this)[CategoryViewModel::class.java]
+        val aboutViewModel =
+            ViewModelProvider(this)[AboutViewModel::class.java]
 
-        _binding = FragmentCategoryBinding.inflate(inflater, container, false)
+        _binding = FragmentAboutBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textCategory
-        categoryViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textAbout
+        aboutViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
@@ -34,6 +35,5 @@ class CategoryFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
     }
 }

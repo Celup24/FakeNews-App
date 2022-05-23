@@ -23,4 +23,10 @@
         android:label="Favorit"
         tools:layout="@layout/fragment_favorite" />
 
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.bangkit.fakenewsdetector.ui.about.AboutFragment"
+        android:label="Tentang Aplikasi"
+        tools:layout="@layout/fragment_about" />
+
 </navigation>

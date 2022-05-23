@@ -5,4 +5,5 @@
     <string name="title_home">Menu Utama</string>
     <string name="title_category">Kategori</string>
     <string name="title_favorite">Favorit</string>
+    <string name="title_about">Tentang Aplikasi</string>
 </resources>
